@@ -25,6 +25,7 @@
   --accent-color: #FF0000; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+    --background-color-cards:#4154f1;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -993,25 +994,32 @@ section,
 # Values Section
 --------------------------------------------------------------*/
 .values .card {
-  background-color: var(--surface-color);
+  background-color: var(--contrast-color);
+    border-radius: 30px;
   color: var(--default-color);
   padding: 30px;
   box-shadow: 0px 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: 0.3s;
   height: 100%;
+    align-items: center;
   border: 0;
 }
 
+
 .values .card img {
-  padding: 30px 50px;
-  transition: 0.5s;
-  transform: scale(1.1);
+  border-radius: 15px;
+  width: 90%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: 90%; /* Asegura que la imagen ocupe toda la altura del contenedor */
+  object-fit: cover; /* Cubre el área del contenedor manteniendo las proporciones */
+  transform: scale(1.1); /* Escala la imagen para darle un efecto de agrandado */
+  transition: 0.5s; /* Transición suave para el efecto de escala */
 }
 
 .values .card h3 {
   font-size: 24px;
   font-weight: 700;
+    color: var(--accent-color);
   margin-bottom: 18px;
 }
 
