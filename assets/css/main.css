@@ -32,14 +32,14 @@ td {
 border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     border-collapse: collapse;
         border-radius: 10px; /* Bordes redondeados para la tabla */
-        padding: 8px;
-        text-align:left;
+        padding: 18px;
+        text-align:center;
         color: black; /* Texto en rojo */
     }
     th {
-        background-color: red; /* Fondo rojo para los encabezados */
+        background-color: var(--accent-color); /* Fondo rojo para los encabezados */
         text-align: left;
-        padding: 8px;
+        padding: 18px;
         color: white; /* Texto en blanco para los encabezados */
         /* border-radius: 10px; /* Bordes redondeados para la tabla */ */
     }
@@ -980,6 +980,23 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about{
+    align-items: center;
+    text-align: center;
+}
+.about .content-interpretacion {
+  background-color: color-mix(in srgb, #4154f1, transparent 95%);
+  padding: 30px;
+    margin-top:-30px;
+   text-align: justify; 
+}
+
+.about .content-interpretacion h3{
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
 .about .content {
   background-color: color-mix(in srgb, #4154f1, transparent 95%);
   padding: 40px;
