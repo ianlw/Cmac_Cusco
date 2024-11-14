@@ -11,25 +11,34 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+.left-down-rounded{
+    border-bottom-left-radius: 10px;
+}
+.right-down-rounded{
+    border-bottom-right-radius: 10px;
+    border: 0px;
+}
+
     table {
         width: 80%;
-        border-collapse: collapse;
-        background-color: white; /* Fondo blanco para toda la tabla */
-        margin: 20px auto;
-        border-radius: 10px; /* Bordes redondeados para la tabla */
-        overflow: hidden; /* Asegura que las esquinas de las celdas también se redondeen */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de elevación */
-    }
-    td {
-        /* border: 1px solid #333; */
+    border-collapse: collapse;
+    background-color: white; /* Fondo blanco para toda la tabla */
+    margin: 20px auto;
+    border-radius: 10px; /* Bordes redondeados para la tabla */
+    overflow: hidden; /* Asegura que las esquinas de las celdas también se redondeen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de elevación */
+}
+td {
+border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
         border-radius: 10px; /* Bordes redondeados para la tabla */
         padding: 8px;
-        text-align: center;
+        text-align:left;
         color: black; /* Texto en rojo */
     }
     th {
         background-color: red; /* Fondo rojo para los encabezados */
-        text-align: center;
+        text-align: left;
         padding: 8px;
         color: white; /* Texto en blanco para los encabezados */
         /* border-radius: 10px; /* Bordes redondeados para la tabla */ */
